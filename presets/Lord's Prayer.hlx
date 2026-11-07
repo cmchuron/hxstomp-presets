@@ -6,13 +6,13 @@
    "application" : "HX Edit",
    "appversion" : 58851328,
    "build_sha" : "v3.71-32-g1039661",
-   "modifieddate" : 1793854257,
+   "modifieddate" : 1794076661,
    "name" : "Lord's Prayer"
   },
   "tone" : {
    "dsp0" : {
     "block0" : {
-     "@enabled" : true,
+     "@enabled" : false,
      "@model" : "HD2_CompressorKinkyComp",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
@@ -23,33 +23,40 @@
      "Level" : 0.670,
      "Mix" : 0.340,
      "Release" : 0.20,
-     "Sensitivity" : 0.330
+     "Sensitivity" : 0.120
     },
     "block1" : {
-     "@enabled" : false,
-     "@model" : "HD2_DistPillars",
-     "@no_snapshot_bypass" : false,
-     "@path" : 0,
-     "@position" : 1,
-     "@stereo" : false,
-     "@type" : 0,
-     "Gain" : 0.470,
-     "Level" : 0.20,
-     "Mode" : 0,
-     "Tone" : 0.620
-    },
-    "block2" : {
      "@enabled" : true,
      "@model" : "HD2_DistDhyanaDrive",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
-     "@position" : 2,
+     "@position" : 1,
      "@stereo" : false,
      "@type" : 0,
      "Gain" : 0.190,
      "Level" : 0.470,
      "Tone" : 0.570,
      "Voice" : 0.70
+    },
+    "block2" : {
+     "@enabled" : false,
+     "@model" : "HD2_TremoloHarmonic",
+     "@no_snapshot_bypass" : false,
+     "@path" : 0,
+     "@position" : 2,
+     "@stereo" : false,
+     "@type" : 0,
+     "BassFreq" : 500.0,
+     "DutyCycle" : 0.210,
+     "Intensity" : 0.780,
+     "Level" : 0.0,
+     "Mix" : 1.0,
+     "Speed" : 4.0,
+     "Spread" : 1.0,
+     "SyncSelect1" : 6,
+     "TempoSync1" : true,
+     "TrebFreq" : 700.0,
+     "WaveShape" : 3
     },
     "block3" : {
      "@bypassvolume" : 1.0,
@@ -118,7 +125,7 @@
      "Feedback" : 0.540,
      "Headroom" : 0.0,
      "Level" : 0.0,
-     "Mix" : 0.40,
+     "Mix" : 0.350,
      "Scale" : 1.0,
      "Spread" : 0.290,
      "SyncSelect1" : 8,
@@ -201,18 +208,18 @@
    "footswitch" : {
     "dsp0" : {
      "block1" : {
-      "@fs_enabled" : false,
-      "@fs_index" : 1,
-      "@fs_label" : "Pillars",
-      "@fs_ledcolor" : 525824,
-      "@fs_momentary" : false,
-      "@fs_primary" : true
-     },
-     "block2" : {
       "@fs_enabled" : true,
       "@fs_index" : 2,
       "@fs_label" : "Dhyana Drive",
       "@fs_ledcolor" : 13676288,
+      "@fs_momentary" : false,
+      "@fs_primary" : true
+     },
+     "block2" : {
+      "@fs_enabled" : false,
+      "@fs_index" : 6,
+      "@fs_label" : "Harmonic Tremolo",
+      "@fs_ledcolor" : 1037,
       "@fs_momentary" : false,
       "@fs_primary" : true
      },
@@ -231,7 +238,7 @@
     "@PowercabMode" : 0,
     "@PowercabSelect" : 2,
     "@PowercabVoicing" : 0,
-    "@current_snapshot" : 1,
+    "@current_snapshot" : 0,
     "@cursor_dsp" : 0,
     "@cursor_group" : "block6",
     "@cursor_path" : 0,
@@ -375,21 +382,21 @@
     "127" : ""
    },
    "snapshot0" : {
-    "@custom_name" : false,
+    "@custom_name" : true,
     "@ledcolor" : 0,
-    "@name" : "SNAPSHOT 1",
+    "@name" : "Intro",
     "@pedalstate" : 0,
     "@tempo" : 120.0,
     "@valid" : true,
     "blocks" : {
      "dsp0" : {
-      "block0" : true,
-      "block1" : false,
+      "block0" : false,
+      "block1" : true,
       "block2" : false,
       "block3" : true,
       "block4" : true,
       "block5" : true,
-      "block6" : false,
+      "block6" : true,
       "block7" : true
      }
     }
@@ -409,7 +416,7 @@
       "block3" : true,
       "block4" : true,
       "block5" : true,
-      "block6" : true,
+      "block6" : false,
       "block7" : true
      }
     }
@@ -424,7 +431,7 @@
     "blocks" : {
      "dsp0" : {
       "block0" : true,
-      "block1" : false,
+      "block1" : true,
       "block2" : true,
       "block3" : true,
       "block4" : true,
@@ -444,8 +451,8 @@
     "blocks" : {
      "dsp0" : {
       "block0" : true,
-      "block1" : true,
-      "block2" : false,
+      "block1" : false,
+      "block2" : true,
       "block3" : true,
       "block4" : true,
       "block5" : true,

@@ -6,8 +6,8 @@
    "application" : "HX Edit",
    "appversion" : 58851328,
    "build_sha" : "v3.71-32-g1039661",
-   "modifieddate" : 1793853060,
-   "name" : "2026-06-03"
+   "modifieddate" : 1794079502,
+   "name" : "Worship I"
   },
   "tone" : {
    "dsp0" : {
@@ -107,7 +107,7 @@
      "Level" : 0.0
     },
     "block6" : {
-     "@enabled" : false,
+     "@enabled" : true,
      "@model" : "HD2_DelayTransistorTape",
      "@no_snapshot_bypass" : false,
      "@path" : 0,
@@ -121,7 +121,7 @@
      "Mix" : 0.270,
      "Scale" : 1.0,
      "Spread" : 1.0,
-     "SyncSelect1" : 9,
+     "SyncSelect1" : 8,
      "TempoSync1" : true,
      "Time" : 0.5070,
      "WowFlutter" : 0.40
@@ -217,10 +217,10 @@
       "@fs_primary" : true
      },
      "block6" : {
-      "@fs_enabled" : false,
+      "@fs_enabled" : true,
       "@fs_index" : 5,
       "@fs_label" : "Transistor Tape",
-      "@fs_ledcolor" : 67840,
+      "@fs_ledcolor" : 458496,
       "@fs_momentary" : false,
       "@fs_primary" : true
      }
@@ -240,7 +240,7 @@
     "@guitarpad" : 0,
     "@model" : "@global_params",
     "@pedalstate" : 2,
-    "@tempo" : 73.0,
+    "@tempo" : 116.0,
     "@topology0" : "A",
     "@topology1" : 0
    },
@@ -409,7 +409,7 @@
       "block3" : true,
       "block4" : true,
       "block5" : true,
-      "block6" : false,
+      "block6" : true,
       "block7" : true
      }
     }
